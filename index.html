@@ -65,6 +65,12 @@ nav.menu a{text-decoration:none}
 .polaroid.b{width:230px;height:300px;transform:rotate(5deg) translate(-34px,46px)}
 .polaroid figcaption{font-family:var(--serif);font-style:italic;font-size:17px;text-align:center;margin-top:8px;color:var(--muted)}
 .polaroid .ph{height:calc(100% - 30px)}
+@media (max-width:600px){
+  .polaroids{min-height:300px;padding-bottom:40px}
+  .polaroid.a{width:180px;height:240px}
+  .polaroid.b{width:160px;height:215px;transform:rotate(5deg) translate(-24px,34px)}
+  .hero-text,.polaroids,.theme,.kit,.quote,.feature-img,.feature-tx,.about .tx,.step,.perk{flex-basis:100%;min-width:0}
+}
 
 /* diferenciais */
 .perks{display:flex;flex-wrap:wrap;gap:18px;padding-top:40px}
@@ -243,10 +249,10 @@ footer .base a{color:var(--blue)}
   <div class="wrap">
     <h2 class="h2 center reveal">Peças e kits</h2>
     <div class="grid">
-      <article class="kit reveal"><div class="ph"><img data-img="p1" alt="Kit de fraldas de boca bordadas" loading="lazy"></div><div class="tx"><h3>Kit Fraldinhas</h3><p>3 fraldas de boca bordadas com o nome do bebê.</p><strong class="price">a partir de [R$ XX]</strong></div></article>
-      <article class="kit reveal"><div class="ph"><img data-img="p3" alt="Manta verde-clara com bebê e balões bordados e bico de crochê rosa" loading="lazy"></div><div class="tx"><h3>Manta Bordada</h3><p>Dupla face, 100% algodão, com bico de crochê ou renda.</p><strong class="price">a partir de [R$ XX]</strong></div></article>
-      <article class="kit reveal"><div class="ph"><img data-img="p11" alt="Porta-cartão de vacina floral com nome bordado" loading="lazy"></div><div class="tx"><h3>Porta-cartão de Vacina</h3><p>Personalizado com nome e tema.</p><strong class="price">a partir de [R$ XX]</strong></div></article>
-      <article class="kit dark reveal"><div class="ph"><img data-img="kitmat" alt="Kit maternidade rosa no berço, com protetor de casinhas e varal de corações" loading="lazy"></div><div class="tx"><span class="tag">Mais pedido</span><h3>Kit Maternidade</h3><p>Kit berço com protetor, almofadas e varal de corações, todos no mesmo tema.</p><strong class="price">a partir de [R$ XX]</strong></div></article>
+      <article class="kit reveal"><div class="ph"><img data-img="p1" alt="Kit de fraldas de boca bordadas" loading="lazy"></div><div class="tx"><h3>Kit Fraldinhas</h3><p>3 fraldas de boca bordadas com o nome do bebê.</p></div></article>
+      <article class="kit reveal"><div class="ph"><img data-img="p3" alt="Manta verde-clara com bebê e balões bordados e bico de crochê rosa" loading="lazy"></div><div class="tx"><h3>Manta Bordada</h3><p>Dupla face, 100% algodão, com bico de crochê ou renda.</p></div></article>
+      <article class="kit reveal"><div class="ph"><img data-img="p11" alt="Porta-cartão de vacina floral com nome bordado" loading="lazy"></div><div class="tx"><h3>Porta-cartão de Vacina</h3><p>Personalizado com nome e tema.</p></div></article>
+      <article class="kit dark reveal"><div class="ph"><img data-img="kitmat" alt="Kit maternidade rosa no berço, com protetor de casinhas e varal de corações" loading="lazy"></div><div class="tx"><span class="tag">Mais pedido</span><h3>Kit Maternidade</h3><p>Kit berço com protetor, almofadas e varal de corações, todos no mesmo tema.</p></div></article>
     </div>
   </div>
 </section>
@@ -267,7 +273,6 @@ footer .base a{color:var(--blue)}
         </ul>
         <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
           <a href="#monte" class="btn btn-berry" data-kit="Kit maternidade completo">Quero esse kit</a>
-          <strong style="color:var(--berry)">a partir de [R$ XX]</strong>
         </div>
       </div>
     </div>
@@ -278,7 +283,7 @@ footer .base a{color:var(--blue)}
   <div class="wrap">
     <div class="center reveal">
       <h2 class="h2">Monte seu kit</h2>
-      <p class="lead">Escolha tudo aqui e mande a mensagem pronta. A Cleyne responde com a prévia e o orçamento.</p>
+      <p class="lead">Escolha tudo aqui e mande a mensagem pronta. A Cleyne responde com a prévia do bordado.</p>
     </div>
     <div class="builder">
       <form class="builder-form" onsubmit="return false">
@@ -297,7 +302,7 @@ footer .base a{color:var(--blue)}
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
           Enviar no WhatsApp
         </a>
-        <p class="small">O orçamento final depende das peças e do bordado. Nada é cobrado antes da sua aprovação.</p>
+        <p class="small">Você vê a prévia do bordado com o nome antes de a Cleyne começar.</p>
       </aside>
     </div>
   </div>
@@ -367,7 +372,7 @@ footer .base a{color:var(--blue)}
   <div class="faq-inner">
     <h2 class="h2 center" style="margin-bottom:12px">Dúvidas frequentes</h2>
     <details><summary>Qual o prazo de produção?</summary><p>[X dias úteis] após a aprovação da prévia, mais o prazo do frete. Para o chá de bebê, peça com antecedência.</p></details>
-    <details><summary>Como funciona o pagamento?</summary><p>[Pix, cartão, sinal de X% para iniciar e restante na entrega.]</p></details>
+    <details><summary>Como funciona o pagamento?</summary><p>[Pix ou cartão.]</p></details>
     <details><summary>Posso escolher um tema que não está aqui?</summary><p>[Sim / sob consulta.] Mande a ideia pelo WhatsApp.</p></details>
     <details><summary>Como lavar as peças bordadas?</summary><p>[Instruções de lavagem da Cleyne.]</p></details>
     <details><summary>Vocês enviam para outras cidades?</summary><p>Sim, para todo o Brasil. [Retirada disponível em ...]</p></details>
